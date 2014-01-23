@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GTB
+LIBS:GTB-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "23 dec 2013"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 7555 U1
+U 1 1 52B8C4EC
+P 5800 3750
+F 0 "U1" H 6400 3200 60  0000 C CNN
+F 1 "7555" H 6400 4350 60  0000 C CNN
+F 2 "~" H 5850 3400 60  0000 C CNN
+F 3 "~" H 5850 3400 60  0000 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 52B8C52C
+P 4400 4750
+F 0 "C1" H 4400 4850 40  0000 L CNN
+F 1 "1u" H 4406 4665 40  0000 L CNN
+F 2 "~" H 4438 4600 30  0000 C CNN
+F 3 "~" H 4400 4750 60  0000 C CNN
+	1    4400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 52B8C554
+P 4400 3900
+F 0 "R1" V 4480 3900 40  0000 C CNN
+F 1 "470K" V 4407 3901 40  0000 C CNN
+F 2 "~" V 4330 3900 30  0000 C CNN
+F 3 "~" H 4400 3900 30  0000 C CNN
+	1    4400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VR VR1
+U 1 1 52B8C5C7
+P 4400 2950
+F 0 "VR1" V 4460 2904 40  0000 C TNN
+F 1 "LDR" V 4400 2950 40  0000 C CNN
+F 2 "~" H 4400 2950 60  0000 C CNN
+F 3 "~" H 4400 2950 60  0000 C CNN
+	1    4400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 52B8C5E8
+P 7000 4150
+F 0 "R2" V 7100 4150 40  0000 C CNN
+F 1 "1K" V 7007 4151 40  0000 C CNN
+F 2 "~" V 6930 4150 30  0000 C CNN
+F 3 "~" H 7000 4150 30  0000 C CNN
+	1    7000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 52B8C5F1
+P 7000 4800
+F 0 "D1" H 7000 4900 50  0000 C CNN
+F 1 "LED" V 7000 4700 50  0000 C CNN
+F 2 "~" H 7000 4800 60  0000 C CNN
+F 3 "~" H 7000 4800 60  0000 C CNN
+	1    7000 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3200 4400 3650
+Wire Wire Line
+	5000 3450 4400 3450
+Connection ~ 4400 3450
+Wire Wire Line
+	5000 3750 5000 4400
+Wire Wire Line
+	5000 4400 4400 4400
+Connection ~ 4400 4400
+Connection ~ 5000 4050
+Wire Wire Line
+	6600 3750 7000 3750
+Wire Wire Line
+	7000 3750 7000 3900
+Wire Wire Line
+	7000 4400 7000 4600
+Wire Wire Line
+	4400 5100 7000 5100
+Wire Wire Line
+	5600 5100 5600 4550
+Connection ~ 5600 5100
+Wire Wire Line
+	4400 2600 5950 2600
+Wire Wire Line
+	5950 2600 5950 2900
+$Comp
+L VCC #PWR01
+U 1 1 52B8C715
+P 4400 2400
+F 0 "#PWR01" H 4400 2500 30  0001 C CNN
+F 1 "VCC" H 4400 2500 30  0000 C CNN
+F 2 "" H 4400 2400 60  0000 C CNN
+F 3 "" H 4400 2400 60  0000 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2400 4400 2700
+Connection ~ 4400 2600
+Wire Wire Line
+	5600 2900 5600 2600
+Connection ~ 5600 2600
+$Comp
+L GND #PWR02
+U 1 1 52B8C776
+P 4400 6100
+F 0 "#PWR02" H 4400 6100 30  0001 C CNN
+F 1 "GND" H 4400 6030 30  0001 C CNN
+F 2 "" H 4400 6100 60  0000 C CNN
+F 3 "" H 4400 6100 60  0000 C CNN
+	1    4400 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4950 4400 6100
+Connection ~ 4400 5100
+$Comp
+L BATTERY BT1
+U 1 1 52B8C7D3
+P 3450 3850
+F 0 "BT1" H 3450 4050 50  0000 C CNN
+F 1 "CR2032" H 3450 3660 50  0000 C CNN
+F 2 "~" H 3450 3850 60  0000 C CNN
+F 3 "~" H 3450 3850 60  0000 C CNN
+	1    3450 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 52B8C7EF
+P 3450 3350
+F 0 "#PWR03" H 3450 3450 30  0001 C CNN
+F 1 "VCC" H 3450 3450 30  0000 C CNN
+F 2 "" H 3450 3350 60  0000 C CNN
+F 3 "" H 3450 3350 60  0000 C CNN
+	1    3450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 52B8C7F5
+P 3450 4400
+F 0 "#PWR04" H 3450 4400 30  0001 C CNN
+F 1 "GND" H 3450 4330 30  0001 C CNN
+F 2 "" H 3450 4400 60  0000 C CNN
+F 3 "" H 3450 4400 60  0000 C CNN
+	1    3450 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4150 3450 4400
+Wire Wire Line
+	3450 3350 3450 3550
+Wire Wire Line
+	4400 4150 4400 4550
+Wire Wire Line
+	7000 5100 7000 5000
+$EndSCHEMATC
